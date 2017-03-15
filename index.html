@@ -148,61 +148,61 @@
     </style>
 
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Raleway+Dots);
-        @import url(https://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
-        @import url(https://weloveiconfonts.com/api/?family=entypo);
-        /* entypo */
-        [class*="entypo-"]:before {
-            font-family: 'entypo', sans-serif;
+
+
+        .social {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            transform: translateY(-50%);
         }
 
-        section #services {
-            text-align: center;
-            transform: translatez(0);
-        }
-
-        /*section #services h2 {
-            margin: 80px 0px 40px;
-            color: #3C4858;
-            font-size: 2.4em;
-            font-family: 'Raleway Dots', sans-serif;
-            text-transform: uppercase;
-            text-align: center;
-        }*/
-        section #services li {
-            width: 120px;
-            height: 140px;
+        .social .link {
             display: inline-block;
-            margin: 20px;
-            list-style: none;
+            vertical-align: middle;
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px dashed white;
+            background-clip: content-box;
+            padding: 10px;
+            transition: .5s;
+            color: #D7D0BE;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 70px;
         }
 
-        section #services li div {
-            width: 120px;
-            height: 120px;
-            color: white; /*#74d4b3*/
-            font-size: 3.4em;
-            text-align: center;
-            line-height: 120px;
-            background-color: #0881a3; /*#fff*/
-            transition: all 0.5s ease;
-        }
-
-        section #services li div:hover {
-            transform: rotate(360deg);
-            border-radius: 100px;
-        }
-
-        section #services li span {
-            width: 120px;
-            height: 20px;
+        .social .link span {
             display: block;
-            padding: 15px 0px;
-            color: #0881a3; /*#fff*/
-            font-family: 'Advent Pro', sans-serif;
-            text-transform: uppercase;
-            font-size: 1.2em;
+            position: absolute;
             text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .social .link:hover {
+            padding: 20px;
+            color: white;
+            margin-left: -5px;
+            transform: translateX(10px) rotate(360deg);
+        }
+
+        .social .link.google-plus {
+            background-color: tomato;
+            color: white;
+        }
+
+        .social .link.twitter {
+            background-color: #00ACEE;
+            color: white;
+        }
+
+        .social .link.facebook {
+            background-color: #3B5998;
+            color: white;
         }
 
     </style>
@@ -637,18 +637,10 @@ The topic for the Photography event is “My Water” which is line with our fes
     <ul id='services'>
         <h2 class="title text-center wow fadeIn" data-wow-delay="0.4s">Social</h2>
         <hr>
-        <li>
-            <a href="https://www.facebook.com/chemflux17" class="no_hover">
-                <div class='entypo-facebook'></div>
-            </a>
-            <span>Facebook</span>
-        </li>
-        <li>
-            <a href="https://twitter.com/SRM_chemflux" class="no_hover">
-                <div class='entypo-twitter'></div>
-            </a>
-            <span>Twitter</span>
-        </li>
+        <div class="social" style="margin-top: 80px">
+            <a href="https://www.facebook.com/chemflux17" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+            <a href="https://twitter.com/SRM_chemflux" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
+        </div>
     </ul>
 </section>
 <!-- Social End -->
