@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
 
     <!-- CSS Files -->
@@ -76,7 +77,7 @@
 
     <style>
         h1, h2, h3, h4, h5, h6, p, a, li, ul, label, input, span {
-            font-family: 'Lato', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
         }
 
         .maps iframe {
@@ -147,7 +148,7 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="background-color: white">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="background-color: #ffffff">
 
 <div id="ip-container" class="ip-container">
     <!-- initial header -->
@@ -163,9 +164,8 @@
     </header>
 </div>
 
-
-<!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation"
-     style="border-radius: 0;background-color: transparent;box-shadow: none">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation"
+     style="border-radius: 0;background-color: rgba(8,129,163,0.7);box-shadow: none">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -175,148 +175,125 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="#">Chemflux</a>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#theme">Theme</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#events">Events</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#sponsors">Sponsors</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
+        <!-- /.navbar-collapse -->
     </div>
-</nav>-->
-
+</nav>
 
 <!-- particles.js container -->
 <div id="particles-js"></div>
 
-
 <!-- Intro Header -->
-<header class="intro" style="margin-top: -600px">
+<header class="intro" style="margin-top: -50%">
     <!--<div id="particles-js"></div>-->
     <div class="intro-body">
         <div class="container">
+            <!-- IICHE Logo -->
+            <img src="img/IICHE.png" width="100px" class="ace" style="float: left;position: relative;">
+            <!-- IICHE Logo End -->
+
+            <!-- SRM Logo -->
+            <img src="img/srm_white_logo.png" width="180px" class="ace" style="float: right;position: relative;">
+            <!-- SRM Logo End -->
+
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
-                    <h2 class="first">Department of Chemical Engineering</h2>
-                    <h2>SRM University</h2>
+                    <h2 class="first" style="margin-top: -100px;font-size: 30px">Department of Chemical Engineering</h2>
+                    <h2 style="font-size: 30px">SRM University</h2>
+                    <!-- Chemflux Logo -->
+                    <img src="img/chemflux_logo.png" width="50%" class="ace" style="position: relative;">
+                    <!-- SRM Logo End -->
                     <h2 class="ubertech" style="color: #ffffff;font-size: 40px;">CHEMFLUX 2017</h2>
-                    <h2>A National Level Technical Symposium</h2>
-                    <h2 style="color: #ffffff">30<sup>th</sup> & 31<sup>st</sup> March 2017</h2>
+                    <h2 style="font-size: 30px">A National Level Technical Symposium</h2>
+                    <h2 style="color: #ffffff;font-size: 30px">30<sup>th</sup> & 31<sup>st</sup> March 2017</h2>
                     <!--<a href="#about" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>-->
-                    </a>
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>-->
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-
-<!-- About -->
+<!-- Countdown -->
 <section id="about" class="section why" style="padding: 80px 50px;margin-top: 10%">
     <div class="container">
         <div class="flex-container">
-            <div class="col-sm-12 col-md-offset-3 col-md-6 col-md-offset-3"><br><br>
+            <div class="col-sm-12 col-md-offset-2 col-md-8 col-md-offset-2"><br><br>
                 <div class="clock"></div>
             </div>
-
         </div>
     </div>
 </section>
 
-<!-- Services -->
-<div class="benefits-wrapper">
-    <div class="container text-center">
-        <div class="row">
-            <div class="item col-xs-12 col-sm-6" style="padding-bottom: 20px">
-                <div class="item-inner" style="background-color: #f6f6f6;padding: 20px">
-                    <h3 class="item-title" style="color: #6b15a1">About Department of Chemical Engineering</h3>
-                    <div class="item-desc">
-                        The Department of Chemical Engineering, SRM University is one of the finest institutions in the
+<!-- About -->
+<section>
+    <div class="benefits-wrapper">
+        <div class="container text-center">
+            <div class="row">
+                <div class="item col-xs-12 col-sm-6" style="padding-bottom: 20px">
+                    <div class="item-inner" style="background-color: #f6f6f6;padding: 20px">
+                        <h3 class="item-title" style="color: #0881a3;">About Department of Chemical Engineering</h3>
+                        <div class="item-desc" style="color: #000000;font-size: 16px;font-weight: 300;line-height: 22.85px;text-align: center">
+                            The Department of Chemical Engineering, SRM University is one of the finest institutions in
+                            the country, for students who wish to pursue a career in the field of Chemical Engineering. The
+                            department offers a balanced version of theoretical knowledge in various core and electives
+                            of this field in addition to courses in humanities, basic science and also practical knowledge.
+                            <a href="#" data-toggle="modal" data-target="#about_dept" class="wow bounceInDown"
+                               data-wow-delay="0.4s" style="color: #0881a3">READ MORE...</a>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-xs-12 col-sm-6" style="padding-bottom: 20px">
+                    <div class="item-inner" style="background-color: #f6f6f6;padding: 20px">
+                        <h3 class="item-title" style="color: #0881a3;">About Chemflux</h3>
+                        <div class="item-desc"
+                             style="color: #000000;font-size: 16px;font-weight: 300;line-height: 22.85px;text-align: center">
+                            Chemflux is the Annual National level Technical fest conducted by the students and the
+                            faculty of the Department of Chemical Engineering, SRM University. Right from its inception in the
+                            year of 2014, Chemflux has created a benchmark for technical symposiums, impacting over 1500
+                            students with over 30+ events in its previous editions.
+                            <a href="#" data-toggle="modal" data-target="#about_chemflux" class="wow bounceInDown"
+                               data-wow-delay="0.4s" style="color: #0881a3">READ MORE...</a>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </div><!--//benefits-->
+</section>
 
-                        country, for students who wish to pursue a career in the field of Chemical Engineering. The
-
-                        department offers a balanced version of theoretical knowledge in various core and electives of
-                        this
-
-                        field in addition to courses in humanities, basic science and also practical knowledge..
-                        Renowned for
-
-                        its state of the art facilities and elite faculty members, the department is committed towards
-                        providing
-
-                        high quality learning platform for its students.
-                        <a href="#" data-toggle="modal" data-target="#myModal" class="wow bounceInDown"
-                           data-wow-delay="0.4s">READ MORE</a>
-                    </div>
-                </div><!--//item-inner-->
-            </div><!--//item-->
-            <div class="item col-xs-12 col-sm-6" style="padding-bottom: 20px">
-                <div class="item-inner" style="background-color: #f6f6f6;padding: 20px">
-                    <h3 class="item-title" style="color: #6b15a1">About Chemflux</h3>
-                    <div class="item-desc">
-                        Chemflux is the Annual National level Technical fest conducted by the students and the faculty
-                        of the
-
-                        Department of Chemical Engineering, SRM University. Right from its inception in the year of
-                        2014,
-
-                        Chemflux has created a benchmark for technical symposiums, impacting over 1500 students with
-                        over
-
-                        30+ events in its previous editions. A consortium of chemical engineers, the fest instigates the
-
-                        engineer within every participating student with a wide range of events and also provides them
-                        with
-
-                        opportunities to interact with experts from the industries.
-                        This year’s team consists of
-
-                        Convener: Dr. K. Tamilarasan
-
-                        Co-Convener: Mrs. D.Nanditha
-
-                        Head of the Department: Dr. M.P. Rajesh
-
-                        Student Coordinators:
-
-                        Secretary: R. Saikiran
-
-                        Joint-Secretary: Kavya Sravanthi
-
-                        Treasurer: V. Abhilash
-                        <a href="#" data-toggle="modal" data-target="#myModal" class="wow bounceInDown"
-                           data-wow-delay="0.4s">READ MORE</a>
-                    </div>
-                </div><!--//item-inner-->
-            </div><!--//item-->
-        </div><!--//row-->
-    </div><!--//container-->
-</div><!--//benefits-->
-
-
-<!-- Download Section -->
-<section id="download" class="content-section text-center"
-         style="background-image: url(img/theme.jpg);margin-top: 50px">
+<!-- Theme -->
+<section id="theme" class="content-section text-center" style="background-image: url(img/theme.jpg);margin-top: 50px">
     <div class="download-section">
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
-                <!--<h2>Download Grayscale</h2>-->
-                <h2 style="color: black">Water Conservation and Management
+                <h2 style="color: black"><b>Water Conservation and Management</b>
                 </h2>
                 <p style="color: black;font-size: 18px;"><b>Water has always been the most indispensable resource on our
                     planet. But due to its abundance, it has come through harsh treatment and abuse over the last few
@@ -330,95 +307,7 @@
     </div>
 </section>
 
-
-<!-- ted x -->
-
-
-<!-- ted xNavigation -->
-<!--<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                Menu <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
-                <span class="light ted"><b>TED</b><sup class="ted-x">x</sup></span>
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-<!--        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-<!--                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#theme">Theme</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#speakers">Speakers</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#gallery">Gallery</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-<!--   </div>
-   <!-- /.container -->
-<!--</nav>
-
-<!-- ted x end -->
-
-<!-- Navbar -->
-<!--<nav class="navbar navbar-default" role="navigation" style="border-radius: 0;background-color: #1c1c1c">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Chemoflux</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>-->
-<!-- Navbar end -->
-
-<!-- SRM Logo -->
-<!--<img src="img/srm_white_logo.png" width="260px" class="ace"
-     style="float: right;position: relative;padding: 20px 20px 20px 20px">
-<!-- SRM Logo End -->
-
-<!-- Header Linus Curve -->
+<!-- Header Sinus Curve -->
 <!--<div class="header" style="height: 800px;background-color: #1B3C59">
     <canvas id="canvas" width="960" height="400"></canvas>
     <div class="container">
@@ -443,9 +332,7 @@
         </div>
     </div>
 </div>
-
-<!-- Header Linus Curve end -->
-
+<!-- Header Sinus Curve end -->
 
 <!-- Events -->
 <section id="events">
@@ -467,7 +354,6 @@
                 <span class="card-summary wow fadeIn" data-wow-delay="0.4s">
 				“Necessity is the mother of invention” – a problem raised always encourages better solutions. At CHEMFLUX ’17, we are providing an opportunity for the students to exhibit their research work with respect to the problems faced by the nation.
 You will be assessed by a panel of our erudite judges, oﬀering you a promising platform to present your research work.
-
 			</span>
                 <span class="card-meta">
 				<a href="#" data-toggle="modal" data-target="#paper_presentation" class="wow bounceInDown"
@@ -482,10 +368,7 @@ You will be assessed by a panel of our erudite judges, oﬀering you a promising
 				</span>
 			</span>
                 <span class="card-summary wow fadeIn" data-wow-delay="0.4s">
-				A picture speaks 1000 words!!
-Bring out the artist in you!
-Present your research ideas as an illustrated abstract, either individually or in teams.
-
+				A picture speaks 1000 words!! Bring out the artist in you! Present your research ideas as an illustrated abstract, either individually or in teams.
 			</span>
                 <span class="card-meta">
 				<a href="#" data-toggle="modal" data-target="#poster_presentation" class="wow bounceInDown"
@@ -529,10 +412,8 @@ Present your research ideas as an illustrated abstract, either individually or i
 				</span>
 			</span>
                 <span class="card-summary wow fadeIn" data-wow-delay="0.4s">
-				All you shutterbugs out there!
-Start snapping coz the Chemflux online photography is here.
+				All you shutterbugs out there! Start snapping coz the Chemflux online photography is here.
 The topic for the Photography event is “My Water” which is line with our fest’s theme ‘Water Conservation and Management’.
-
 			</span>
                 <span class="card-meta">
 				<a href="#" data-toggle="modal" data-target="#photography" class="wow bounceInDown"
@@ -558,23 +439,6 @@ The topic for the Photography event is “My Water” which is line with our fes
     </div>
 </section>
 <!-- Events End -->
-
-<!-- Other Events -->
-<!--<aside class="bg-dark"
-       style="margin-top: 50px;background-color: #2f7ddb;padding: 50px;background-image: url(Img/blach_grey.png)">
-    <div class="container text-center">
-        <div class="call-to-action">
-            <h2 style="color:#ffffff">Click here to explore the more events!</h2><br><br>
-            <a href="FunEvents.html">
-                <button type="button" class="btn btn-primary btn-lg">
-                    More Events
-                </button>
-            </a>
-            <br><br>
-        </div>
-    </div>
-</aside>-->
-
 
 <!-- Sponsors -->
 <section id="sponsors" style="margin-top: 50px">
@@ -698,25 +562,10 @@ The topic for the Photography event is “My Water” which is line with our fes
 <!--   Core JS Files   -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-<!--<script src="assets/js/particle.js"></script>-->
-<!--<script>
+<script>
     new WOW().init();
 </script>
-<script src="assets/js/material.min.js"></script>-->
-
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<!--<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
-
-<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
-<!--<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
-
-<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
-<!--<script src="assets/js/material-kit.js" type="text/javascript"></script>
-
-<!-- New Js -->
-<!--<script src="assets/js/linus.js"></script>-->
-
-<!--<script src="assets/js/typetext.js"></script>
+<script src="assets/js/material.min.js"></script>
 
 <!-- Preloader -->
 <script src="PagePreloadingEffect/js/classie.js"></script>
@@ -744,11 +593,10 @@ The topic for the Photography event is “My Water” which is line with our fes
         clock = $('.clock').FlipClock(diff, {
             clockFace: 'DailyCounter',
             countdown: true,
-            showSeconds: false
+            showSeconds: true
         });
     });
 </script>
-
 
 <!-- 1 - Paper Presentation -->
 <div class="modal fade" id="paper_presentation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -1190,7 +1038,7 @@ The topic for the Photography event is “My Water” which is line with our fes
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel" style="text-align: center">Paper Presentation</h4>
+                <h4 class="modal-title" id="myModalLabel" style="text-align: center">Photography</h4>
             </div>
             <div class="modal-body">
                 <!-- Tabs with icons on Card -->
@@ -1204,17 +1052,13 @@ The topic for the Photography event is “My Water” which is line with our fes
                                         <a href="#p_dates" data-toggle="tab">
                                             <i class="material-icons">description</i>
                                             Important Dates
-
-
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#p_contact" data-toggle="tab">
                                             <i class="material-icons">call</i>
                                             Contact
-
                                         </a>
-
                                     </li>
                                 </ul>
                             </div>
@@ -1227,22 +1071,74 @@ The topic for the Photography event is “My Water” which is line with our fes
                                     Last day for entries: 26-03-2017
                                     Announcement of results: 29-03-2017
                                     Check our Facebook page for more details!
-
-
                                 </p>
                             </div>
                             <div class="tab-pane" id="p_contact">
                                 <p>
                                     Abhilash<br>
                                     8056146638
-
-
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- End Tabs with icons on Card -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Department -->
+<div class="modal fade" id="about_dept" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="chem_dept" style="text-align: center">About Department of Chemical
+                    Engineering</h4>
+            </div>
+            <div class="modal-body">
+                <!-- Tabs with icons on Card -->
+                <p>The Department of Chemical Engineering, SRM University is one of the finest institutions in the
+                    country, for students who wish to pursue a career in the field of Chemical Engineering. The
+                    department offers a balanced version of theoretical knowledge in various core and electives of this
+                    field in addition to courses in humanities, basic science and also practical knowledge.. Renowned
+                    for its state of the art facilities and elite faculty members, the department is committed towards
+                    providing high quality learning platform for its students.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Chemflux -->
+<div class="modal fade" id="about_chemflux" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="chemflux" style="text-align: center">About Chemflux</h4>
+            </div>
+            <div class="modal-body">
+                <!-- Tabs with icons on Card -->
+                <p>Chemflux is the Annual National level Technical fest conducted by the students and the faculty of the
+                    Department of Chemical Engineering, SRM University. Right from its inception in the year of 2014,
+                    Chemflux has created a benchmark for technical symposiums, impacting over 1500 students with over
+                    30+ events in its previous editions. A consortium of chemical engineers, the fest instigates the
+                    engineer within every participating student with a wide range of events and also provides them with
+                    opportunities to interact with experts from the industries.
+                    This year’s team consists of
+                    Convener: Dr. K. Tamilarasan
+                    Co-Convener: Mrs. D.Nanditha
+                    Head of the Department: Dr. M.P. Rajesh
+
+                    Student Coordinators:
+                    Secretary: R. Saikiran
+                    Joint-Secretary: Kavya Sravanthi
+                    Treasurer: V. Abhilash
+
+                </p>
             </div>
         </div>
     </div>
